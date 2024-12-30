@@ -1,18 +1,24 @@
 import { useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import { motion } from 'framer-motion';
 import Globe from 'react-globe.gl';
 
+interface Technology {
+  name: string;
+  img: string;
+}
+
+interface Technologies {
+  mobile: Technology[];
+  cloud: Technology[];
+  frontend: Technology[];
+  backend: Technology[];
+}
+
 const About = () => {
-  const isSmall = useMediaQuery({ maxWidth: 440 });
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const yearsOfExperience: number = 3.5;
+  const projectsCompleted: number = 40;
 
-  // Data for metrics
-  const yearsOfExperience = 3.5;
-  const projectsCompleted = 40;
-
-  // Technologies grouped by category with image sources
-  const technologies = {
+  const technologies: Technologies = {
     mobile: [
       { name: 'Flutter', img: '/assets/programming_languages/flutter.png' },
       { name: 'Kotlin', img: '/assets/programming_languages/kotlin.png' },
@@ -33,21 +39,19 @@ const About = () => {
     backend: [
       { name: 'Node.js', img: '/assets/programming_languages/node-js.png' },
       { name: 'Express.js', img: '/assets/programming_languages/express-js.png' },
-      { name: 'php', img: '/assets/programming_languages/php.png' },
+      { name: 'PHP', img: '/assets/programming_languages/php.png' },
     ],
   };
 
-  // Slider control state
-  const [currentSlider, setCurrentSlider] = useState(0);
+  const [currentSlider, setCurrentSlider] = useState<number>(0);
 
-  const handleSliderChange = (index) => {
+  const handleSliderChange = (index: number): void => {
     setCurrentSlider(index);
   };
 
   return (
       <div className="grid-container">
         <section id="about" className="min-h-screen flex flex-col justify-center items-center py-10 text-white">
-          {/* Grid Layout: 2x2 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-7xl px-6">
             {/* Top Left: Image Section */}
             <div className="flex justify-center items-center mb-6 md:mb-0">
@@ -61,10 +65,9 @@ const About = () => {
             </div>
 
             {/* Top Right: Name and Stats Section */}
-            {/* Top Right: Name and Stats Section */}
             <div className="flex flex-col justify-center items-start space-y-6 space-x-20 text-center md:text-left">
               <p></p>
-              <p className="text-2xl font-medium "> Hi, I am Natnael Alemseged</p>
+              <p className="text-2xl font-medium">Hi, I am Natnael Alemseged</p>
               <p className="text-xl">Senior Mobile Developer and UI/UX Designer</p>
 
               {/* Experience & Projects Metrics */}
@@ -87,12 +90,12 @@ const About = () => {
                     height={180}
                     width={180}
                     backgroundColor="rgba(0, 0, 0, 0)"
-                    backgroundImageOpacity={0.5}
                     showAtmosphere
                     showGraticules
                     globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                     bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                    labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
+                    labelsData={[{ lat: 9.03, lng: 38.74, text: 'Addis Ababa, Ethiopia', color: 'white', size: 15 }]}
+
                 />
               </div>
 
@@ -112,7 +115,8 @@ const About = () => {
                     <button
                         key={category}
                         className={`px-4 py-2 rounded-full ${currentSlider === index ? 'bg-gray-800' : 'bg-gray-900'}`}
-                        onClick={() => handleSliderChange(index)}>
+                        onClick={() => handleSliderChange(index)}
+                    >
                       {category.charAt(0).toUpperCase() + category.slice(1)}
                     </button>
                 ))}
@@ -125,11 +129,13 @@ const About = () => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="flex flex-wrap justify-center gap-6">
-                {technologies[Object.keys(technologies)[currentSlider]].map((tech) => (
+                  className="flex flex-wrap justify-center gap-6"
+              >
+                {technologies[Object.keys(technologies)[currentSlider] as keyof Technologies].map((tech: Technology) => (
                     <div
                         key={tech.name}
-                        className="w-32 h-40 flex flex-col justify-center items-center bg-gray-700 rounded-lg p-4">
+                        className="w-32 h-40 flex flex-col justify-center items-center bg-gray-700 rounded-lg p-4"
+                    >
                       <img src={tech.img} alt={tech.name} className="w-16 h-16 mb-2" />
                       <p className="text-white text-sm">{tech.name}</p>
                     </div>
