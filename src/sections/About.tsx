@@ -65,8 +65,8 @@ const About = () => {
             </div>
 
             {/* Top Right: Name and Stats Section */}
-            <div className="flex flex-col justify-center items-start space-y-6 space-x-20 text-center md:text-left">
-              <p></p>
+            {/* Top Right: Name and Stats Section */}
+            <div className="flex flex-col justify-center items-start space-y-6 text-center md:text-left">
               <p className="text-2xl font-medium">Hi, I am Natnael Alemseged</p>
               <p className="text-xl">Senior Mobile Developer and UI/UX Designer</p>
 
@@ -81,7 +81,22 @@ const About = () => {
                   <p className="text-2xl">{projectsCompleted}</p>
                 </div>
               </div>
+
+              {/* Download CV Button */}
+              <div className="mt-10   pl-24 ">
+                <a
+                    href="/path/to/your/cv.pdf"
+                    download="Natnael_Alemseged_CV.pdf"
+                    className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 block mx-auto md:mx-0"
+                >
+                  Download My CV
+                </a>
+              </div>
             </div>
+
+
+
+
 
             {/* Bottom Left: Globe and Remote Work Text */}
             <div className="flex justify-center items-center flex-col space-y-10 text-center">
