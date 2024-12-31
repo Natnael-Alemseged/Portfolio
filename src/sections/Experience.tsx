@@ -90,6 +90,7 @@ const WorkExperience: React.FC = () => {
 
   return (
       <section id="work-experience" className="py-16 text-white">
+        <header className="text-3xl font-semibold text-center mb-8">My Work Experiences</header>
         <div className="container mx-auto px-6 relative">
           {/* Central Vertical Line */}
           {/*<div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-gray-400 h-full"></div>*/}

@@ -83,27 +83,34 @@ const About = () => {
               </div>
 
               {/* Download CV Button */}
-              <div className="mt-10   pl-24 ">
+              <div className="flex justify-center space-x-14 mt-10">
                 <a
                     href="/path/to/your/cv.pdf"
                     download="Natnael_Alemseged_CV.pdf"
-                    className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 block mx-auto md:mx-0"
+                    className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 text-center"
                 >
-                  Download My CV
+                  Preview My CV
+                </a>
+                <a
+                    href="/path/to/your/cv.pdf"
+                    className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 text-center"
+                >
+                  Let's Connect
                 </a>
               </div>
+
+              {/* Download CV Button */}
+
+
             </div>
-
-
-
 
 
             {/* Bottom Left: Globe and Remote Work Text */}
             <div className="flex justify-center items-center flex-col space-y-10 text-center">
-              <div className="rounded-3xl w-full sm:h-[180px] h-full flex justify-center items-center">
+              <div className="rounded-3xl w-full sm:h-[280  px] h-full flex justify-center items-center">
                 <Globe
-                    height={180}
-                    width={180}
+                    height={280}
+                    width={280}
                     backgroundColor="rgba(0, 0, 0, 0)"
                     showAtmosphere
                     showGraticules

@@ -4,8 +4,9 @@ import Footer from './sections/Footer'; // Assuming Footer is a .jsx file
 import Navbar from './sections/Navbar.jsx'; // Assuming Navbar is a .jsx file
 import Contact from './sections/Contact.jsx'; // Assuming Contact is a .jsx file
 // import Clients from './sections/Clients.jsx'; // Assuming Clients is a .jsx file
-// import Projects from './sections/Projects.jsx';
+import Projects from './sections/Projects.jsx';
 import WorkExperience from './sections/Experience';
+// import SelectedProjects from './sections/SelectedProjects.jsx';
 
 const App: React.FC = () => {
     return (
@@ -13,11 +14,13 @@ const App: React.FC = () => {
             <Navbar />
             <Hero />
             <About />
-            {/*<Projects />*/}
+            <Projects />
             {/*<Clients />*/}
+            {/*<SelectedProjects />*/}
             <WorkExperience />
             <Contact />
             <Footer />
+
         </main>
     );
 };
