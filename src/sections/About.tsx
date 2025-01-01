@@ -51,7 +51,7 @@ const About = () => {
 
   return (
       <div className="grid-container">
-        <section id="about" className="min-h-screen flex flex-col justify-center items-center py-10 text-white">
+        <section id="about" className="min-h-screen flex flex-col justify-center items-center py-10  text-white">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-7xl px-6">
             {/* Top Left: Image Section */}
             <div className="flex justify-center items-center mb-6 md:mb-0">
@@ -65,13 +65,14 @@ const About = () => {
             </div>
 
             {/* Top Right: Name and Stats Section */}
-            {/* Top Right: Name and Stats Section */}
-            <div className="flex flex-col justify-center items-start space-y-6 text-center md:text-left">
+
+            <div
+                className="flex flex-col justify-center items-center md:items-start space-y-6 text-center md:text-left md:ml-6 lg:ml-10">
               <p className="text-2xl font-medium">Hi, I am Natnael Alemseged</p>
               <p className="text-xl">Senior Mobile Developer and UI/UX Designer</p>
 
               {/* Experience & Projects Metrics */}
-              <div className="flex space-x-8 mt-6 justify-center md:justify-start">
+              <div className="flex space-x-8 mt-6 justify-center">
                 <div>
                   <p className="text-lg font-semibold">Years of Experience</p>
                   <p className="text-2xl">{yearsOfExperience} years</p>
@@ -98,10 +99,6 @@ const About = () => {
                   Let's Connect
                 </a>
               </div>
-
-              {/* Download CV Button */}
-
-
             </div>
 
 
@@ -116,7 +113,7 @@ const About = () => {
                     showGraticules
                     globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                     bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                    labelsData={[{ lat: 9.03, lng: 38.74, text: 'Addis Ababa, Ethiopia', color: 'white', size: 15 }]}
+                    labelsData={[{lat: 9.03, lng: 38.74, text: 'Addis Ababa, Ethiopia', color: 'white', size: 15}]}
 
                 />
               </div>
@@ -126,10 +123,10 @@ const About = () => {
                 I'm based in Addis Ababa, Ethiopia, and open to remote work worldwide.
               </p>
             </div>
-
+            {/*http-server ./dist*/}
             {/* Bottom Right: Technologies Section */}
             <div className="w-full">
-              <p className="text-2xl text-center mb-6 mt-10">Technologies I Work With</p>
+              <p className="text-2xl text-center mb-6 pt-8 pl-8 mt-10">Technologies I Work With</p>
 
               {/* Slider controls */}
               <div className="flex justify-center space-x-4 mb-6">
@@ -147,10 +144,10 @@ const About = () => {
               {/* Slider Content */}
               <motion.div
                   key={currentSlider}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.5 }}
+                  initial={{opacity: 0}}
+                  animate={{opacity: 1}}
+                  exit={{opacity: 0}}
+                  transition={{duration: 0.5}}
                   className="flex flex-wrap justify-center gap-6"
               >
                 {technologies[Object.keys(technologies)[currentSlider] as keyof Technologies].map((tech: Technology) => (
@@ -158,7 +155,7 @@ const About = () => {
                         key={tech.name}
                         className="w-32 h-40 flex flex-col justify-center items-center bg-gray-700 rounded-lg p-4"
                     >
-                      <img src={tech.img} alt={tech.name} className="w-16 h-16 mb-2" />
+                      <img src={tech.img} alt={tech.name} className="w-16 h-16 mb-2"/>
                       <p className="text-white text-sm">{tech.name}</p>
                     </div>
                 ))}
