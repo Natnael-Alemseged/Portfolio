@@ -1,39 +1,46 @@
 export const navLinks = [
-    {
-        id: 1,
-        name: 'Home',
-        href: '#home',
-    },
-    {
-        id: 2,
-        name: 'About',
-        href: '#about',
-    }, {
-        id: 3,
-        name: 'Projects',
-        href: '#projects',
-    },
-    {
-        id: 4,
-        name: 'Work',
-        href: '#work-experience',
-    },
 
-    {
-        id: 5,
-        name: 'Contact',
-        href: '#contact',
-    },
-];
+        {
+            id: 1,
+            name: 'Home',
+            href: '#home',
+        },
+        {
+            id: 2,
+            name: 'About',
+            href: '#about',
+        },
+        {
+            id: 3,
+            name: 'Work Experience',
+            href: '#work-experience',
+        },
+        {
+            id: 4,
+            name: 'Projects',
+            href: '#projects',
+        },
+        // {
+        //     id: 5,
+        //     name: 'Clients',
+        //     href: '#clients',
+        // },
+        {
+            id: 6,
+            name: 'Contact',
+            href: '#contact',
+        },
+    ];
 
 export const clientReviews = [
     {
         id: 1,
         name: 'Emily Johnson',
-        position: 'Marketing Director at GreenLeaf',
+        position: 'Product Manager at GreenLeaf',
         img: 'assets/review1.png',
         review:
-            'Working with Natnael Alemseged was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+            'Natnael Alemseged developed a stunning mobile app for our company. His attention to detail in UI/UX design and his ability to deliver a seamless user experience are unmatched. Highly recommend him for any mobile development project!',
+        rating: 5,
     },
     {
         id: 2,
@@ -41,15 +48,17 @@ export const clientReviews = [
         position: 'Founder of TechGear Shop',
         img: 'assets/review2.png',
         review:
-            'Natnael Alemseged’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+            'Natnael’s expertise in mobile development is truly impressive. He built a robust and scalable e-commerce app for us, and our user engagement has skyrocketed since the launch. He’s a true professional and a pleasure to work with.',
+        rating: 5,
     },
     {
         id: 3,
         name: 'John Dohsas',
-        position: 'Project Manager at UrbanTech ',
+        position: 'Project Manager at UrbanTech',
         img: 'assets/review3.png',
         review:
-            'I can’t say enough good things about Natnael Alemseged. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+            'Natnael took our complex mobile app requirements and turned them into a sleek, functional, and user-friendly solution. His problem-solving skills and dedication to quality are outstanding. We’ll definitely work with him again!',
+        rating: 4,
     },
     {
         id: 4,
@@ -57,10 +66,10 @@ export const clientReviews = [
         position: 'CEO of BrightStar Enterprises',
         img: 'assets/review4.png',
         review:
-            'Natnael Alemseged was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+            'Natnael designed and developed a mobile app that perfectly aligned with our vision. His ability to combine beautiful UI/UX design with high-performance functionality is remarkable. He’s a top-tier mobile developer!',
+        rating: 5,
     },
 ];
-
 
 
 export const myProjects = [
@@ -255,8 +264,6 @@ export const myProjects = [
         ],
     },
 ];
-
-
 
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {

@@ -159,6 +159,7 @@ const Hero = () => {
                     <span className="text-xs text-gray-400">Scroll Down</span>
                 </motion.a>
             </div>
+
         </section>
     );
 };
