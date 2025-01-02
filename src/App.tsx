@@ -1,6 +1,6 @@
 import Hero from './sections/Hero.jsx';  // Assuming Hero is a .jsx file
 import About from './sections/About.tsx'; // Assuming About is a .jsx file
-import Footer from './sections/Footer'; // Assuming Footer is a .jsx file
+import Footer from './sections/Footer.jsx'; // Assuming Footer is a .jsx file
 import Navbar from './sections/Navbar.jsx'; // Assuming Navbar is a .jsx file
 import Contact from './sections/Contact.jsx'; // Assuming Contact is a .jsx file
 // import Clients from './sections/Clients.jsx'; // Assuming Clients is a .jsx file
