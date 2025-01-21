@@ -26,6 +26,18 @@ const workExperiences: WorkExperience[] = [
   },
   {
     id: 2,
+    // name: 'Founder & Tech Lead',
+    name: 'Founder & Tech Lead | Flutter Developer ',
+    company: 'Metshafe (Startup)',
+    duration: 'Jun 2022 – Present',
+    description: `
+      - Co-founded and led the development of Metshafe, an eBook app.
+      - Managed technical development and strategic direction.
+      - Developed using Flutter, Firebase, NodeJs, and Kotlin for plugins.
+    `,
+  },
+  {
+    id: 3,
     name: 'Assistant ERP Functional Consultant',
     company: 'Red Cloud ICT Solutions',
     duration: 'Dec 2023 – Sep 2024',
@@ -36,7 +48,7 @@ const workExperiences: WorkExperience[] = [
     `,
   },
   {
-    id: 3,
+    id: 4,
     name: 'Junior ERP Functional Consultant',
     company: 'Red Cloud ICT Solutions',
     duration: 'Mar 2023 – Dec 2023',
@@ -47,7 +59,7 @@ const workExperiences: WorkExperience[] = [
     `,
   },
   {
-    id: 4,
+    id:5,
     name: 'Freelance Software Developer',
     company: 'Self-Employed',
     duration: 'Jul 2022 – Mar 2023',
@@ -57,17 +69,7 @@ const workExperiences: WorkExperience[] = [
       - Managed project timelines and client communication.
     `,
   },
-  {
-    id: 5,
-    name: 'Founder & Tech Lead',
-    company: 'Metshafe (Startup)',
-    duration: 'Jun 2022 – Present',
-    description: `
-      - Co-founded and led the development of Metshafe, an eBook app.
-      - Managed technical development and strategic direction.
-      - Developed using Flutter, Firebase, Golang, and Kotlin for plugins.
-    `,
-  },
+
   {
     id: 6,
     name: 'System Networking and Maintenance Intern',

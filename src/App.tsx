@@ -8,7 +8,7 @@ import Projects from './sections/Projects.jsx';
 import WorkExperience from './sections/Experience';
 // import SelectedProjects from './sections/SelectedProjects.jsx';
 
-
+// todo: correct clients section and also add video to all projects
 const App: React.FC = () => {
     return (
         <main className="max-w-7xl mx-auto relative">
