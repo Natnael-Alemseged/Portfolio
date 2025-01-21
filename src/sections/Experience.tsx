@@ -33,7 +33,7 @@ const workExperiences: WorkExperience[] = [
     description: `
       - Co-founded and led the development of Metshafe, an eBook app.
       - Managed technical development and strategic direction.
-      - Developed using Flutter, Firebase, Golang, and Kotlin for plugins.
+      - Developed using Flutter, Firebase, NodeJs, and Kotlin for plugins.
     `,
   },
   {
