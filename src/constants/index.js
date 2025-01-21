@@ -81,6 +81,8 @@ export const myProjects = [
         href: 'https://example.com',
         texture: '/textures/project/mood.mp4',
         logo: '/assets/project-logo1.png',
+        isLinkGithub: null,
+
         logoStyle: {
             backgroundColor: '#2A1816',
             border: '0.2px solid #36201D',
@@ -117,6 +119,8 @@ export const myProjects = [
         subdesc:
             'With support for various book formats, author profiles, customizable themes, and community engagement features, Metshafe stands out as a powerful eBook platform.',
         href: 'https://example.com',
+        isLinkGithub: null,
+
         texture: '/textures/project/project2.mp4',
         logo: '/assets/project-logo2.png',
         logoStyle: {
@@ -154,6 +158,8 @@ export const myProjects = [
         subdesc:
             'It features property browsing, user favorites, intuitive filtering, and an easy-to-use calendar for booking.',
         href: 'https://play.google.com/store/apps/details?id=com.beit.rent.apartment',
+        isLinkGithub: false,
+
         texture: '/textures/project/beit_rent.mp4',
         logo: '/assets/project-logo3.png',
         logoStyle: {
@@ -185,7 +191,8 @@ export const myProjects = [
         desc: 'Alibo Market is a feature-rich e-commerce platform connecting buyers, sellers, and promoters.',
         subdesc:
             'Promotes in-app chats, coupon-driven commissions, local/global payments, and gamified reward systems.',
-        href: 'https://example.com',
+        href: '',
+        isLinkGithub: false,
         texture: '/textures/project/project4.mp4',
         logo: '/assets/project-logo4.png',
         logoStyle: {
@@ -243,6 +250,8 @@ export const myProjects = [
         href: 'https://github.com/Natnael-Alemseged/Windows-text-Hashing',
         texture: '/textures/project/project6.mp4',
         logo: '/assets/project-logo6.png',
+        isLinkGithub: true,
+
         logoStyle: {
             backgroundColor: '#2A1816',
             border: '0.2px solid #36201D',

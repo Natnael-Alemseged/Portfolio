@@ -72,7 +72,8 @@ const Contact = () => {
 
             <div className="relative min-h-screen flex items-center justify-center flex-col">
                 <img
-                    src="/assets/terminal.png"
+                    src="/assets/terminal.webp"
+                    loading="lazy"
                     alt="terminal background"
                     className="absolute inset-0 min-h-screen object-cover"
                     aria-hidden="true"

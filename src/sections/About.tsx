@@ -66,8 +66,9 @@ const About = () => {
                 className="w-64 h-64 border-2 border-cyan-500 rounded-lg overflow-hidden shadow-lg mb-3"
             >
               <img
-                  src="/assets/my_images/personal-%20(2).jpg"
+                  src="/assets/my_images/personal- (2).webp"
                   alt="Natnael Alemseged Image"
+                  loading="lazy"
                   className="w-full h-full object-cover"
               />
             </motion.div>
@@ -222,7 +223,7 @@ const About = () => {
                       whileHover={{ scale: 1.05 }}
                       className="w-32 h-40 flex flex-col justify-center items-center bg-gray-700 rounded-lg p-4 hover:bg-cyan-500 transition-all"
                   >
-                    <img src={tech.img} alt={tech.name} className="w-16 h-16 mb-2" />
+                    <img src={tech.img} alt={tech.name} className="w-16 h-16 mb-2" loading="lazy"/>
                     <p className="text-white text-sm">{tech.name}</p>
                   </motion.div>
               ))}
