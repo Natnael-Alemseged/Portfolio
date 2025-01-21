@@ -20,11 +20,11 @@ export const navLinks = [
             name: 'Projects',
             href: '#projects',
         },
-        {
-            id: 5,
-            name: 'Clients',
-            href: '#clients',
-        },
+        // {
+        //     id: 5,
+        //     name: 'Clients',
+        //     href: '#clients',
+        // },
         {
             id: 6,
             name: 'Contact',
@@ -142,8 +142,8 @@ export const myProjects = [
             },
             {
                 id: 3,
-                name: 'Golang',
-                path: '/assets/programming_languages/go.png',
+                name: 'Node.js',
+                path: '/assets/programming_languages/node-js.png',
             },
             {
                 id: 4,
@@ -191,9 +191,9 @@ export const myProjects = [
         desc: 'Alibo Market is a feature-rich e-commerce platform connecting buyers, sellers, and promoters.',
         subdesc:
             'Promotes in-app chats, coupon-driven commissions, local/global payments, and gamified reward systems.',
-        href: '',
+        href: 'https://play.google.com/store/apps/details?id=com.aliboMarket.alibo',
         isLinkGithub: false,
-        texture: '/textures/project/project4.mp4',
+        texture: '/textures/project/Alibo_Market.mp4',
         logo: '/assets/project-logo4.png',
         logoStyle: {
             backgroundColor: '#0E1F38',
@@ -242,36 +242,36 @@ export const myProjects = [
     //         },
     //     ],
     // },
-    {
-        title: 'Windows Text Hashing',
-        desc: 'A Windows application for hashing text input and copying the result to the clipboard.',
-        subdesc:
-            'Provides a user-friendly interface for efficient text hashing and automatic result copying.',
-        href: 'https://github.com/Natnael-Alemseged/Windows-text-Hashing',
-        texture: '/textures/project/project6.mp4',
-        logo: '/assets/project-logo6.png',
-        isLinkGithub: true,
-
-        logoStyle: {
-            backgroundColor: '#2A1816',
-            border: '0.2px solid #36201D',
-            boxShadow: '0px 0px 60px 0px #AA3C304D',
-        },
-        spotlight: '/assets/spotlight6.png',
-        tags: [
-            {
-                id: 1,
-                name: 'Flutter',
-                path: '/assets/programming_languages/flutter.png',
-            },
-
-            {
-                id: 2,
-                name: 'Inno-Setup',
-                path: '/assets/programming_languages/inno.png',
-            },
-        ],
-    },
+    // {
+    //     title: 'Windows Text Hashing',
+    //     desc: 'A Windows application for hashing text input and copying the result to the clipboard.',
+    //     subdesc:
+    //         'Provides a user-friendly interface for efficient text hashing and automatic result copying.',
+    //     href: 'https://github.com/Natnael-Alemseged/Windows-text-Hashing',
+    //     texture: '/textures/project/project6.mp4',
+    //     logo: '/assets/project-logo6.png',
+    //     isLinkGithub: true,
+    //
+    //     logoStyle: {
+    //         backgroundColor: '#2A1816',
+    //         border: '0.2px solid #36201D',
+    //         boxShadow: '0px 0px 60px 0px #AA3C304D',
+    //     },
+    //     spotlight: '/assets/spotlight5.png',
+    //     tags: [
+    //         {
+    //             id: 1,
+    //             name: 'Flutter',
+    //             path: '/assets/programming_languages/flutter.png',
+    //         },
+    //
+    //         {
+    //             id: 2,
+    //             name: 'Inno-Setup',
+    //             path: '/assets/programming_languages/inno.png',
+    //         },
+    //     ],
+    // },
 ];
 
 

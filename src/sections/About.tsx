@@ -16,8 +16,8 @@ interface Technologies {
 }
 
 const About = () => {
-  const yearsOfExperience: number = 3.5;
-  const projectsCompleted: number = 20;
+  const yearsOfExperience: number = 3;
+  const projectsCompleted: string = ' 10 + ';
 
   const technologies: Technologies = {
     mobile: [
@@ -32,6 +32,7 @@ const About = () => {
     frontend: [
       { name: 'Flutter', img: '/assets/programming_languages/flutter.png' },
       { name: 'React', img: '/assets/programming_languages/react.png' },
+      { name: 'Next js', img: '/assets/programming_languages/next.js.png' },
       { name: 'Tailwind', img: '/assets/programming_languages/tailwind.png' },
       { name: 'HTML/CSS', img: '/assets/programming_languages/html+css.png' },
       { name: 'JavaScript', img: '/assets/programming_languages/javascript.png' },
@@ -39,7 +40,7 @@ const About = () => {
     ],
     backend: [
       { name: 'Node.js', img: '/assets/programming_languages/node-js.png' },
-      { name: 'Express.js', img: '/assets/programming_languages/express-js.png' },
+      { name: 'Laravel', img: '/assets/programming_languages/laravel.png' },
       { name: 'PHP', img: '/assets/programming_languages/php.png' },
     ],
   };
@@ -51,6 +52,8 @@ const About = () => {
   const handleSliderChange = (index: number): void => {
     setCurrentSlider(index);
   };
+  const cvLink:string='https://drive.google.com/file/d/1i3q2XSCJU2JqyRYLlNGjctAn_gQ6W7-M/view?usp=sharing';
+
 
   return (
       <section id="about" className="min-h-screen flex flex-col justify-center items-center py-10 text-white">
@@ -245,7 +248,7 @@ const About = () => {
                   </button>
                 </div>
                 <iframe
-                    src="https://drive.google.com/file/d/11jpLVpntRakW6e5POdd36VU1eHRqoTdk/preview?rm=minimal"
+                    src={cvLink}
                     width="100%"
                     height="500px"
                     style={{ border: 'none' }}

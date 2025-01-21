@@ -169,26 +169,30 @@ const Projects = () => {
                                 ))}
                             </div>
 
-                            <a
-                                className="flex items-center gap-2 cursor-pointer text-white-600"
-                                href={currentProject.href}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                {currentProject.isLinkGithub == null ? (
+                            {currentProject.isLinkGithub == null ? (
+                                <div className="flex items-center justify-center gap-2 text-white-600 rounded-lg px-4 py-2 border border-gray-200 opacity-50 cursor-not-allowed">
                                     <p>Awaiting Release</p>
-                                ) : currentProject.isLinkGithub === true ? (
-                                    <>
-                                        <p className="py-4">Check The Git Repo</p>
-                                        <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3"/>
-                                    </>
-                                ) : (
-                                    <>
-                                        <p>Check The App</p>
-                                        <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3"/>
-                                    </>
-                                )}
-                            </a>
+                                </div>
+                            ) : (
+                                <a
+                                    className="flex items-center justify-center gap-2 cursor-pointer text-white-600 hover:bg-gray-600/20 rounded-lg px-4 py-2 transition-all duration-300 ease-in-out border border-gray-200 hover:border-gray-400 hover:shadow-md"
+                                    href={currentProject.href}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {currentProject.isLinkGithub === true ? (
+                                        <>
+                                            <p>Check The Git Repo</p>
+                                            <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+                                        </>
+                                    ) : (
+                                        <>
+                                            <p>Check The App</p>
+                                            <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+                                        </>
+                                    )}
+                                </a>
+                            )}
                         </div>
                     </div>
 
